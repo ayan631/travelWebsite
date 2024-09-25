@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Travel - House Details Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/19b26482d8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <!------------------------- Nav Bar ----------------------->
+     <nav id="navbar" class="navbar-white">
+        <a href="index.html">
+            <img src="images/logo-violet.png" class="logo">
+        </a> 
+        <ul class="nav-links">
+            <li><a href="list.html" class="active">Popular Places</a></li>
+            <li><a href="#availability">Availability</a></li>
+            <li><a href="#host">Contact Host</a></li>
+        </ul>
+        <a href="#" class="register-btn">Register Now</a>
+        <i class="fa-solid fa-ellipsis-vertical" onclick="togglebtn()"></i>
+    </nav>
+    <div class="house-detail">
+        <div class="house-title">
+            <h1>Wenge House</h1>
+            <div class="row">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span>500+ Client Reviews</span>
+                </div>
+                <div>
+                    <p>Location: Sydney, City of Australia</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-img1">
+                <img src="images/house-1.png">
+            </div>
+            <div>
+                <img src="images/house-2.png">
+            </div>
+            <div>
+                <img src="images/house-3.png">
+            </div>
+            <div>
+                <img src="images/house-4.png">
+            </div>
+            <div>
+                <img src="images/house-5.png">
+            </div>
+        </div>
+        <div class="small-details">
+            <h2>Entire rental unit hosted by Rodger</h2>
+            <p>2 Guests &nbsp; &nbsp; 2Beds &nbsp; &nbsp; 1 Bathroom</p>
+            <h4>$100 / day</h4>
+        </div>
+        <hr class="line">
+        <form action="" class="check-form">
+            <div id="availability">
+                <label>Check-in</label>
+                <input type="text" placeholder="Add Date">
+            </div>
+            <div>
+                <label>Check-out</label>
+                <input type="text" placeholder="Add Date">
+            </div>
+            <div class="guest-field">
+                <label>Guests</label>
+                <input type="text" placeholder="2 Guests">
+            </div>
+            <button type="submit">Check Availability</button>
+        </form>
+        <ul class="detail-list">
+            <li><i class="fa-solid fa-house-chimney"></i>Entire Home
+                <span>You will have the entire home to stay.</span>
+            </li>
+            <li><i class="fa-solid fa-paintbrush"></i>Enhanced Clean
+                <span>This host has committed to India Travel's cleaning process.</span>
+            </li>
+            <li><i class="fa-solid fa-location-dot"></i>Great Location
+                <span>90% happy guests provided 5 star rating to our proposed location.</span>
+            </li>
+            <li><i class="fa-solid fa-heart"></i>Smooth Check-in Experience
+                <span>90% of the recent guests gave a 5 star rating for making Check-in so easy.</span>
+            </li>
+        </ul>
+        <hr class="line">
+        <p class="home-desc">Guest will be allocated at the ground floor according to availability. You get a comfotrtable 2-Bedroom Apartment with a true city feeling. The prices are shown for two guests only. To add more members please add number of guests in details section. Prices are subject to availability and demand. Cancelling the request will take 3 to 7 busness days to refund the money. <span>Please Note: Once the request is cancelled, 5% of the hotel room rent will be deducted and rest is refundable.</span></p>
+        <hr class="line">
+        <div class="map">
+            <h2>Location on Map:</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52989.93693093886!2d151.20907145620944!3d-33.89297450976407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12adf16a020b77%3A0x5017d681632ad90!2sBondi%20Junction%20NSW%202022%2C%20Australia!5e0!3m2!1sen!2sin!4v1727237629469!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <b>Sydney, Australia</b>
+        </div>
+        <hr class="line">
+        <div class="host-info" id="host">
+            <img src="images/host.png">
+            <div>
+                <h2>Hosted By:&nbsp; &nbsp;Ayan</h2>
+                <p><span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </span>&nbsp; &nbsp;400 Reviews &nbsp;|&nbsp; 100% Responded &nbsp;|&nbsp; Response Time: 60 minutes</p>
+            </div>
+        </div>
+        <a href="#" class="contactHost">Contact Host</a>
+    </div>
+
+    <div class="container">
+        <div class="footer">
+            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://whatsapp.com/"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="https://facebook.com/"><i class="fa-brands fa-youtube"></i></a>
+            <hr>
+            <p>Copyright <span>&#169</span> 2024, <span class="I">I</span>ndia <span class="T">T</span>ravel.</p>
+        </div>
+    </div> 
+
+
+    
+    <script>
+        // Navbar Toggler//
+        let navbar = document.getElementById("navbar");
+        function togglebtn() {
+            navbar.classList.toggle("hidemenu");
+        }
+    </script>
+
+</body>
+</html>
