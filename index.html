@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Travel - Travel App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/19b26482d8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <nav id="navbar">
+            <a href="index.html">
+                <img src="images/logo1.png" class="logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#popular" class="active">Popular Places</a></li>
+                <li><a href="#exclusives">Travel Outside</a></li>
+                <li><a href="list.html">Online Packages</a></li>
+            </ul>
+            <a href="#" class="register-btn">Register Now</a>
+            <i class="fa-solid fa-ellipsis-vertical" onclick="togglebtn()"></i>
+        </nav>
+        <div class="container">
+            <h1>Find Your Next Destination</h1>
+            <div class="search-bar">
+                <form action="#">
+                    <div class="location-input">
+                        <label for="">Location</label>
+                        <input type="text" placeholder="Your choice of place">
+                    </div>
+                    <div>
+                        <label for="">Check In</label>
+                        <input type="text" placeholder="Add Date">
+                    </div>
+                    <div>
+                        <label for="">Check Out</label>
+                        <input type="text" placeholder="Add Date">
+                    </div>
+                    <div>
+                        <label for="">Guest</label>
+                        <input type="text" placeholder="Add Guests">
+                    </div>
+                    <button type="submit"><img src="images/search.png"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="sub-title" id="exclusives">Exclusives</h2>
+        <div class="exclusives">
+            <div>
+                <img src="images/London.png">
+                <span>
+                    <h3>London</h3>
+                    <p>Only @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/SwitzerLand.png">
+                <span>
+                    <h3>Switzerland</h3>
+                    <p>Only @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/Autralia.png">
+                <span>
+                    <h3>Australia</h3>
+                    <p>Only @ $200</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/France.png">
+                <span>
+                    <h3>France</h3>
+                    <p>Only @ $280</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/NewYork.png">
+                <span>
+                    <h3>New York</h3>
+                    <p>Only @ $300</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/New Delhi.png">
+                <span>
+                    <h3>New Delhi</h3>
+                    <p>Only @ &#8377 34,000/-</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/RJ.png">
+                <span>
+                    <h3>Rajasthan</h3>
+                    <p>Only @ &#8377 38,499/-</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/UK.png">
+                <span>
+                    <h3>Uttarakhand</h3>
+                    <p>Only @ &#8377 45,899/-</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/Bangkok.png">
+                <span>
+                    <h3>Bangkok</h3>
+                    <p>Only @ 300</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/BD.png">
+                <span>
+                    <h3>BanglaDesh</h3>
+                    <p>Only @ $180</p>
+                </span>
+            </div>
+        </div>
+
+        <h2 class="sub-title" id="popular">Popular Picks</h2>
+        <div class="trending">
+            <div>
+                <img src="images/dubai.png">
+                <h3>Dubai</h3>
+            </div>
+            <div>
+                <img src="images/new-york.png">
+                <h3>New York</h3>
+            </div>
+            <div>
+                <img src="images/paris.png">
+                <h3>Paris</h3>
+            </div>
+            <div>
+                <img src="images/new-delhi.png">
+                <h3>New Delhi</h3>
+            </div>
+        </div>
+
+        <div class="cta">
+            <h3>Sharing <br>Is More Than Caring Now</h3>
+            <p>Great opportunity to earn money <br>by sharing your extra space.</p>
+            <a href="#" class="cta-btn">Know More</a>
+        </div>
+
+        <h2 class="sub-title">Stories</h2>
+        <div class="stories">
+            <div>
+                <img src="images/story-1.png">
+                <p>Travel Popular European Countries within just $10,000</p>
+            </div>
+            <div>
+                <img src="images/story-2.png">
+                <p>Travel half of the world in just less than a year</p>
+            </div>
+            <div>
+                <img src="images/story-3.png">
+                <p>Get the best among the best experiences from all the places</p>
+            </div>
+        </div>
+        <a href="#" class="start-btn">Initiate</a>
+        
+        <div class="about-msg">
+            <h2>About <span class="I">I</span>ndia <span class="T">T</span>ravel</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi beatae nisi sit minima praesentium in obcaecati inventore? Dolor provident voluptatibus quaerat blanditiis debitis laboriosam vitae? Obcaecati quos temporibus esse, quisquam suscipit eligendi impedit aliquid aliquam.</p>
+        </div>
+
+        <div class="footer">
+            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://whatsapp.com/"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="https://facebook.com/"><i class="fa-brands fa-youtube"></i></a>
+            <hr>
+            <p>Copyright <span>&#169</span> 2024, <span class="I">I</span>ndia <span class="T">T</span>ravel.</p>
+        </div>
+    </div>
+
+
+    <script>
+        let navbar = document.getElementById("navbar");
+        function togglebtn() {
+            navbar.classList.toggle("hidemenu");
+        }
+    </script>
+</body>
+</html>
