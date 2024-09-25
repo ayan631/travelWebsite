@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #ff4242;
+}
+.register-btn{
+    background: #ff4242;
+    color: #000;
+    border-radius: 8px;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.container{
+    padding: 0 7%;
+}
+.header h1{
+    font-size: 4vw;
+    color: #fff;
+    text-align: center;
+    padding-top: 22%;
+}
+.search-bar{
+    background: #fff;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+
+.search-bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search-bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+    margin-top: 8px;
+}
+.search-bar form button{
+    background: #ff4242;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.search-bar form button img{
+    width: 15px;
+    margin-top: 7px;
+}
+.location-input{
+    flex: 1;
+}
+.search-bar form label{
+    font-weight: 700;
+}
+
+/* -------------------- exclusives-------------------- */
+.sub-title{
+    margin: 50px 0 20px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 800;
+}
+
+.exclusives{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+.exclusives div img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* -------------------------- Trending Places ------------------------ */
+.trending{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.trending div img{
+    width: 100%;
+    border-radius: 8px;
+}
+.trending h3{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
+/* ------------------------- Call to Action ------------------------------------- */
+.cta{
+    margin: 80px 0;
+    background-image: linear-gradient(to right, #8b4dcc, transparent), url(images/banner-2.png);
+    background-size: cover;
+    background-position:  center;
+    border-radius: 10px;
+    padding: 5%;
+    color: #fff;
+}
+.cta h3{
+    font-size: 4vw;
+    line-height: 5.3vw;
+}
+.cta p{
+    font-size: 20px;
+    margin: 15px 0;
+}
+.cta-btn{
+    background-color: #ff4242;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+
+/* --------------------- Travelers' Stories --------------------- */
+.stories{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.stories img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: tranform 0.5s ease;
+}
+.stories div{
+    position: relative;
+    text-align: center;
+}
+.stories div p{
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+.start-btn{
+    text-decoration: none;
+    background: #ff4242;
+    color: #fff;
+    width: 80%;
+    display: block;
+    max-width: 200px;
+    margin: 50px auto;
+    padding: 15px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+
+/* -------------------------- About message ----------------------- */
+.about-msg{
+    text-align: center;
+    margin: 60px 0;
+    color: #333;
+    font-size: 17px;
+
+}
+.about-msg h2{
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.I{
+    color: #ff4242;
+    font-size: 34px;
+}
+.T{
+    color: #097013;
+    font-size: 34px;
+}
+
+
+/* -------------------------------- Footer ----------------------------- */
+.footer{
+    margin: 50px 0 10px;
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #ff4242;
+    font-size: 30px;
+    margin: 0 10px;
+}
+.footer hr{
+    background: #999;
+    height: 2px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+.footer p{
+    font-family: "Turret Road", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+.footer p span{
+    font-size: 32px;
+}
+.active{
+    position: relative;
+}
+.active::after{
+    content: '';
+    background: #fff;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+}
+
+nav .fa-ellipsis-vertical{
+    display: none;
+}
+
+
+/* --------------------------For smaller screen ----------------------------------  */
+@media only screen and (max-width:700px){
+    .logo{
+        position: fixed;
+        top: 4%;
+        left: 7%;
+    }
+    nav{
+        position:fixed;
+        top: 0;
+        z-index: 100;
+        display: inline-block;
+        width: 100%;
+        padding: 100px 7% 0;
+        background: #000;
+        text-align: right;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav .nav-links li{
+        margin: 10px 0;
+        display: block;
+    }
+    .register-btn{
+        margin: 15px 0 30px;
+        display: inline-block;
+    }
+    nav .fa-ellipsis-vertical{
+        display: block;
+        position: fixed;
+        top: 4%;
+        right: 7%;
+        color: #ff4242;
+        font-size: 22px;
+    }
+    .active::after{
+        left: -40px;
+        transform: translate(0, 50%);
+        bottom: 50%;
+    }
+    .hidemenu{
+        max-height: 300px;
+
+    }
+    .header h1{
+        padding-top: 300px;
+        font-size: 7vw;
+    }
+    .search-bar{
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px 10px 30px;
+        border-radius: 5px;
+        position: relative;
+    }
+    .search-bar form{
+        display: block;
+    }
+    .search-bar form input{
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .search-bar form button{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    .footer p{
+        font-family: "Kalam", cursive;
+        font-size: 18px;
+        font-weight: 400;
+        
+    }
+    .footer p span{
+        font-size: 24px;
+    }
+
+}
+
+
+
+/* -----------------------Listing Page ---------------------------- */
+.navbar-white{
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+
+}
+.navbar-white .nav-links li a{
+    color: #000;
+}
+.navbar-white .register-btn{
+    background: #a322c4;
+    color: #fff;
+}
+nav.navbar-white .fa-ellipsis-vertical{
+    color: #000;
+}
+.navbar-white .active::after{
+    background: #a322c4;
+}
+.list-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left-col{
+    flex-basis: 70%;
+}
+.right-col{
+    flex-basis: 25%;
+}
+.left-col h1{
+    color: #333;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+.house{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+.house-img{
+    flex-basis: 40%;
+}
+.house-info{
+    flex-basis: 58%;
+    color: #555;
+}
+.house-info h3{
+    color: #333;
+    font-size: 22px;
+    margin: 5px 0 ;
+    font-weight: 700;
+}
+.house-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+.house-info i{
+    color: #a322c4;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.price{
+    text-align: right;
+}
+.price h4{
+    font-size: 20px;
+    color: #a322c4;
+    font-family: "Kalam", cursive;
+    font-weight: 600;
+}
+.sidebar{
+    border:1px solid #999;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+.sidebar h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.sidebar h3{
+    margin: 20px 0 10px;
+    font-size: 20px;
+    color: #a322c4;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+.filter p{
+    flex: 1;
+}
+.filter input{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.sidebar-link{
+    text-align: right;
+    margin: 20px 0;
+}
+.sidebar-link a {
+    text-decoration: none;
+    color: #333;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.pagination img{
+    width: 15px;
+    margin: 12px 20px;
+}
+.right-arrow{
+    transform: rotate(180deg);
+}
+.pagination span{
+    margin: 5px 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 50%;
+    cursor: pointer;
+}
+.pagination .current{
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+}
+
+/* ---------------------- Smaller Screen for Listing Page ------------------------- */
+@media only screen and (max-width: 700px) {
+    .list-container{
+        margin-top: 140px;
+    }
+    .left-col, .right-col, .house-img, .house-info{
+        flex-basis: 100%;
+    }
+    .left-col h1{
+        font-size: 20px;
+        color: #a322c4;
+    }
+    .house-info{
+        font-size: 16px;
+    }
+    .house-info h3{
+        font-size: 20px;
+        color: #a322c4;
+    }
+    .house-info i{
+        font-size: 12px;
+    }
+    .pagination span{
+        margin: 10px 2px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+}
+
+
+/* --------------------------- HouseDetails Page --------------------------- */
+.house-detail{
+    padding: 0 12%;
+}
+.house-title{
+    margin-top: 50px;
+}
+.house-title h1{
+    font-size: 26px;
+    font-weight: 800;
+}
+.house-title .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 16px 0;
+    color: #333;
+}
+.house-title span{
+    margin: 0 16px;
+}
+.house-title i{
+    color: #a322c4;
+    font-size: 14px;
+}
+.gallery{
+    display: grid;
+    gap: 15px;
+    grid-template-areas: 'first first . .' 'first first . .';
+    margin: 20px 0;
+}
+.gallery div img{
+    width: 100%;
+    display: block;
+    border-radius: 7px;
+}
+.gallery-img1{
+    grid-area: first;
+}
+.small-details h2{
+    font-size: 22px;
+    font-weight: 800;
+}
+.small-details h4{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+    color: #a322c4;
+    font-family: "Kalam", cursive;
+}
+.line{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0 50px;
+}
+.check-form{
+    margin: 30px 0;
+    background: #fff;
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    align-items: center;
+    padding: 10px 50px;
+}
+.check-form label{
+    display: block;
+}
+.check-form div{
+    padding: 20px;
+}
+.check-form input{
+    background: transparent;
+    border: 0;
+    outline: none;
+    margin-top: 8px;
+    font-size: 16px;
+}
+.check-form button{
+    background: #a322c4;
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.guest-field{
+    flex: 1;
+}
+.detail-list{
+    list-style: none;
+    margin: 50px 0;
+}
+.detail-list li{
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #555;
+    position: relative;
+}
+.detail-list li span{
+    display: block;
+    font-size: 16px;
+    color: #a322c4;
+    margin: 8px 0 0 10px;
+}
+.detail-list li i{
+    position: absolute;
+    top: 5px;
+    left: -30px;
+}
+.home-desc{
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+.map{
+    margin: 50px 0;
+}
+.map h2{
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.map iframe{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.map b{
+    display: block;
+    font-size: 20px;
+    text-align: right;
+    font-weight: 800;
+    color: #a322c4;
+}
+.host-info{
+    display: flex;
+    align-items: center;
+}
+.host-info img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.host-info h2{
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 22px;
+}
+.host-info i{
+    color: #a322c4;
+
+}
+.contactHost{
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px 0 20px 250px;
+    background: #a322c4;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+
+/* ------------------ Smaller Screen for House Details Page --------------------- */
+@media only screen and (max-width: 700px) {
+    .house-detail{
+        margin-top: 150px;
+    }
+    .row p{
+        margin-top: 20px;
+    }
+    .gallery{
+        grid-template-areas: 'first first' '. .' '. .';
+    }
+    .small-details h2{
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .small-details p{
+        font-size: 12px;
+    }
+    .small-details h4{
+        font-size: 18px;
+        text-align: left;
+        margin: 10px 0;
+    }
+    .check-form{
+        padding: 10px 30px;
+    }
+    .check-form div{
+        padding: 20px 0;
+        width: 100%;
+    }
+    .check-form input{
+        border-bottom: 1px solid #a322c4;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+    .check-form button{
+        font-size: 14px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        border-radius: 5px;
+    }
+    .host-info{
+        display: block;
+        line-height: 28px;
+    }
+    .contactHost{
+        margin: 40px 0;
+    }
+}
